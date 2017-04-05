@@ -4,6 +4,10 @@
   url('fonts/CeraPRO-Regular.ttf') format('truetype');
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: $grey;
   font-family: 'Roboto', sans-serif;
