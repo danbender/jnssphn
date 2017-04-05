@@ -39,6 +39,16 @@ a:hover {
   color: $orange;
 }
 
+ol li {
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+}
+
+input,
+button {
+  -webkit-appearance: none;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1140px;

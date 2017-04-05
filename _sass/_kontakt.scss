@@ -1,0 +1,125 @@
+.kontakt__form {
+  border: 1px solid $grey;
+  margin: 0 auto 5rem;
+  max-width: 60rem;
+  padding: 2rem;
+
+  h3 {
+    color: $orange;
+    font-size: 1.2rem;
+    font-weight: $bold;
+  }
+}
+
+.kontakt__newsletter,
+.kontakt__whatsapp {
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
+.kontakt__newsletter {
+  margin-bottom: 2rem;
+}
+
+.newsletter__form {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 0;
+
+  input,
+  button[type=submit] {
+    border: 0;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  input {
+    background-color: $light-grey;
+  }
+
+  input.zip {
+    margin: 0 0.5rem;
+    width: 5rem;
+  }
+
+  .fa-envelope-o {
+    font-size: 2rem;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  button[type=submit] {
+    background-color: $orange;
+    color: #fff;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.whatsapp__number {
+  font-size: 2rem;
+  font-weight: $bold;
+  margin: 1rem 0 0;
+
+  .fa-whatsapp {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+}
+
+.kontakt__info {
+  text-align: center;
+}
+
+.info__wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 60rem;
+
+  a {
+    color: #fff;
+  }
+
+  a:hover {
+    color: #fff;
+  }
+}
+
+.info__team,
+.info__details {
+  display: inline-block;
+}
+
+.info__team {
+  background-color: $light-grey;
+  display: block;
+  height: 288;
+  flex: 1 0 0;
+}
+
+.info__details {
+  background-color: $orange;
+  color: #fff;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+.info__headline,
+.info__phone,
+.info__email {
+  font-weight: $bold;
+}
+
+.info__address {
+  font-weight: $light;
+}
+
+.info__social {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
