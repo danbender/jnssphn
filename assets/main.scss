@@ -13,11 +13,6 @@ $light: 300;
 $normal: 400;
 $bold: 500;
 
-@font-face {
-  font-family: 'CeraPRO';
-  src: url('fonts/CeraPRO-Regular.otf');
-}
-
 @import 'reset';
 @import 'base';
 @import 'header';
