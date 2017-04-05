@@ -11,6 +11,8 @@ fasebook_username: "jensspahn"
 
 # Build settings
 markdown: kramdown
+kramdown:
+  hard_wrap: true
 exclude:
   - Gemfile
   - Gemfile.lock

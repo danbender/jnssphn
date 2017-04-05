@@ -6,4 +6,4 @@ category: menu
 order: 2
 ---
 
-foo bar
+## Kontakt
