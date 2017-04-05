@@ -1,0 +1,23 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+a {
+  color: $grey;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $orange;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1140px;
+}

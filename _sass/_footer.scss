@@ -1,0 +1,21 @@
+.footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 90px 0 60px;
+}
+
+.footer__title,
+.footer__link {
+  display: inline-block;
+}
+
+.footer__title {
+  font-weight: $bold;
+  margin-right: 1rem;
+}
+
+.footer img {
+  display: block;
+  max-height: 4rem;
+}
