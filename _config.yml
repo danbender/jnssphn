@@ -13,6 +13,8 @@ fasebook_username: "jensspahn"
 markdown: kramdown
 kramdown:
   hard_wrap: true
+sass:
+  style: compressed
 exclude:
   - Gemfile
   - Gemfile.lock
