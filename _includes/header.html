@@ -9,7 +9,7 @@
     <div class="menu__links">
       {% assign sorted_pages = site.pages | sort: "order" %}
       {% for page in sorted_pages %}
-        {% if page.title and page.category == 'menu' %}
+        {% if page.title and page.categories == 'menu' %}
           <a class="menu__link" href="{{ page.url | relative_url }}">
             {{ page.title | escape }}
           </a>
