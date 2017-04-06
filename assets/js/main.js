@@ -36,4 +36,25 @@ $(document).ready(function(){
     menuToggled = !menuToggled;
     toggleMenu();
   });
+
+  var subscribeToggled = false;
+
+  var toggleSubscribe = function() {
+    if (subscribeToggled === true) {
+      $('.subcribe__content').addClass('expanded');
+      $('.subscribe__toggle i').removeClass('fa-chevron-up').addClass('fa-close');
+    } else {
+      $('.subcribe__content').removeClass('expanded');
+      $('.subscribe__toggle i').removeClass('fa-close').addClass('fa-chevron-up');
+    }
+  };
+
+  $('body').on('click', '.subscribe__toggle', function() {
+    subscribeToggled = !subscribeToggled;
+    toggleSubscribe();
+  });
+
+  setTimeout(function() {
+    $('.home__subscribe').addClass('visible');
+  }, 3000);
 });

@@ -1,0 +1,182 @@
+.home__subscribe {
+  background-color: $orange;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.subscribe__toggle {
+  display: none;
+}
+
+.subscribe__header {
+  margin-bottom: 1rem;
+}
+
+.subscribe__headline {
+  font-weight: $bold;
+}
+
+.subscribe__subline {
+  color: $light-orange;
+  font-weight: $light;
+}
+
+.home__form {
+  margin: 1rem 0;
+
+  input {
+    background-color: $light-orange;
+  }
+
+  input,
+  button[type=submit] {
+    border: 0;
+    border-radius: 0;
+    display: inline-block;
+    font-size: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  input.zip {
+    width: 3rem;
+  }
+
+  .fa-envelope-o {
+    color: $light-orange;
+    display: inline-block;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+  }
+
+  button[type=submit] {
+    background-color: #fff;
+    color: $orange;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.home__whatsapp-number {
+  font-size: 1rem;
+  color: $light-orange;
+  margin-bottom: 1rem;
+
+  .fa-whatsapp {
+    display: inline-block;
+    margin-right: 0.5rem;
+    text-align: center;
+  }
+}
+
+.home__contact-link {
+  color: $light-orange;
+  font-size: 0.8rem;
+  font-weight: $light;
+}
+
+@media screen and (min-width: 400px) {
+  .home__form {
+    input,
+    button[type=submit] {
+      font-size: 0.8rem;
+    }
+
+    input.zip {
+      width: 4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__headline {
+    font-size: 2rem;
+  }
+
+  .home__form {
+    input,
+    button[type=submit] {
+      font-size: 1rem;
+    }
+
+    input.zip {
+      width: 5rem;
+    }
+
+    .fa-envelope-o {
+      font-size: 2rem;
+    }
+  }
+
+  .home__whatsapp-number {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .home__subscribe {
+    bottom: 0;
+    box-shadow: 0 0 10px $grey;
+    max-width: 310px;
+    opacity: 0;
+    position: fixed;
+    right: 30vw;
+    transform: translateX(50%);
+    transition: all 0.5s linear;
+  }
+
+  .home__subscribe.visible {
+    opacity: 1;
+  }
+
+  .subscribe__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .subscribe__toggle {
+    color: $light-orange;
+    cursor: pointer;
+    display: block;
+    padding: 0 0 0 0.5rem;
+    font-weight: $bold;
+    font-size: 1rem;
+  }
+
+  .subscribe__headline {
+    font-size: 1.5rem;
+  }
+
+  .subcribe__content {
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 0.3s linear;
+  }
+
+  .subcribe__content.expanded {
+    max-height: 400px;
+  }
+
+  .home__form {
+    input,
+    button[type=submit] {
+      font-size: 0.6rem;
+    }
+
+    input.zip {
+      width: 4rem;
+    }
+
+    .fa-envelope-o {
+      font-size: 1rem;
+    }
+  }
+
+  .home__whatsapp-number {
+    font-size: 1rem;
+  }
+}
