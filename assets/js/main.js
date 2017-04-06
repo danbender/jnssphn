@@ -9,9 +9,10 @@ $(document).ready(function(){
       x2: 65, y2: 45,
       x3: 20
     },
-    cellAlign: 'center',
+    cellAlign: 'left',
     contain: true,
     dragThreshold: 10,
+    imagesLoaded: true,
     wrapAround: true
   };
 
