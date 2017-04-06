@@ -1,4 +1,8 @@
 .flickity-prev-next-button {
+  display: none;
+}
+
+.flickity-prev-next-button {
   width: 4rem;
   height: 4rem;
   background: transparent;
@@ -26,4 +30,10 @@
 
 .flickity-prev-next-button.next {
   right: -3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .flickity-prev-next-button {
+    display: block;
+  }
 }

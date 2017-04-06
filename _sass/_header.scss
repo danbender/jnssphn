@@ -1,12 +1,11 @@
 .header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin: 60px 0 90px;
+  background-color: #fff;
+  margin: 1rem 0 3rem;
 }
 
 .title {
   font-weight: $bold;
+  margin-bottom: 2rem;
 }
 
 .title span {
@@ -19,25 +18,28 @@
 
 .menu__links,
 .menu__social {
-  display: inline-block;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .menu__links a,
 .menu__social a {
+  border: 1px solid $light-grey;
   display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.8rem;
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .menu__links a {
   font-family: 'CeraPRO', 'Roboto', sans-serif;
-  margin-right: 2rem;
 }
 
 .menu__social a {
   font-size: 1.2rem;
-}
-
-.menu__social a:not(:first-child) {
-  margin-left: 0.3rem;
 }
 
 .menu .twitter:hover {
@@ -50,4 +52,42 @@
 
 .menu .instagram:hover {
   color: $instagram;
+}
+
+@media screen and (min-width: 660px) {
+  .header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 90px;
+  }
+
+  .title {
+    margin: 0;
+  }
+
+  .menu__links,
+  .menu__social {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .menu__links a,
+  .menu__social a {
+    border: 0;
+    padding: 0;
+  }
+
+  .menu__links a,
+  .menu__links a:last-child {
+    margin-right: 2rem;
+  }
+
+  .menu__social a {
+    margin-right: 0.5rem;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
 }

@@ -22,16 +22,23 @@
 }
 
 .newsletter__form {
-  display: flex;
-  align-items: center;
   margin: 1rem 0 0;
 
   input,
   button[type=submit] {
     border: 0;
-    display: inline-block;
+    display: block;
     font-size: 1rem;
     padding: 0.5rem;
+  }
+
+  input.email {
+    width: 100%;
+  }
+
+  input.zip,
+  button[type=submit] {
+    display: inline-block;
   }
 
   input {
@@ -39,14 +46,15 @@
   }
 
   input.zip {
-    margin: 0 0.5rem;
+    margin: 0;
     width: 5rem;
   }
 
   .fa-envelope-o {
     font-size: 2rem;
-    display: inline-block;
-    margin-right: 1rem;
+    display: block;
+    margin: 0 auto 1rem;
+    text-align: center;
   }
 
   button[type=submit] {
@@ -54,6 +62,7 @@
     color: #fff;
     padding-left: 0.7rem;
     padding-right: 0.7rem;
+    margin: 0.7rem 0.5rem;
 
     &:hover {
       cursor: pointer;
@@ -62,13 +71,16 @@
 }
 
 .whatsapp__number {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: $bold;
   margin: 1rem 0 0;
+  text-align: center;
 
   .fa-whatsapp {
-    display: inline-block;
-    margin-right: 0.5rem;
+    display: block;
+    font-size: 2rem;
+    margin: 0 auto 1rem;
+    text-align: center;
   }
 }
 
@@ -77,7 +89,6 @@
 }
 
 .info__wrapper {
-  display: flex;
   margin: 0 auto;
   max-width: 60rem;
 
@@ -92,20 +103,19 @@
 
 .info__team,
 .info__details {
-  display: inline-block;
+  display: block;
 }
 
 .info__team {
   background-color: $light-grey;
   display: block;
-  height: 288;
-  flex: 1 0 0;
+  height: 288px;
+  margin-bottom: 1rem;
 }
 
 .info__details {
   background-color: $orange;
   color: #fff;
-  margin-left: 1rem;
   padding: 1rem;
 }
 
@@ -122,4 +132,63 @@
 .info__social {
   font-size: 1.5rem;
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 425px) {
+  .whatsapp__number {
+    font-size: 2rem;
+    text-align: left;
+
+    .fa-whatsapp {
+      display: inline-block;
+      font-size: 2rem;
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .newsletter__form {
+    display: flex;
+    align-items: center;
+
+    .fa-envelope-o {
+      margin: 0 1rem 0 0;
+    }
+
+    input.email {
+      display: inline-block;
+      width: auto;
+    }
+
+    input.email,
+    input.zip {
+      margin-right: 0.5rem;
+    }
+
+    button[type=submit] {
+      margin: 0;
+    }
+  }
+
+  .info__wrapper {
+    display: flex;
+    margin: 0 auto;
+    max-width: 60rem;
+  }
+
+  .info__team,
+  .info__details {
+    display: inline-block;
+  }
+
+  .info__team {
+    flex: 1 0 0;
+    height: auto;
+    margin: 0;
+  }
+
+  .info__details {
+    margin-left: 1rem;
+  }
 }
