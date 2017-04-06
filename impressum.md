@@ -8,16 +8,16 @@ permalink: "/impressum/"
 
 Angaben gemäß § 5 TMG:
 
-{{site.data.info.name_with_title}}
-{{site.data.info.address.street}}
-{{site.data.info.address.postal}} {{site.data.info.address.city}}
+{{site.data.profil.name_mit_titel}}
+{{site.data.adresse.strasse}}
+{{site.data.adresse.plz}} {{site.data.adresse.stadt}}
 
-Telefon: {{site.data.info.phone}}
-Fax: {{site.data.info.fax}}
+Telefon: {{site.data.kontakt.tel}}
+Fax: {{site.data.kontakt.fax}}
 
 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: Jens Spahn.
 
-Webmaster: {{site.data.info.name}} 
+Webmaster: {{site.data.profil.name}}
 
 Bei dem Inhalt unserer Internetseiten handelt es sich um urheberrechtlich geschützte Werke. Wir gestatten die Übernahme von Texten in Datenbestände, die ausschließlich für den privaten Gebrauch eines Nutzers bestimmt sind. Die Übernahme und Nutzung der Daten zu anderen Zwecken bedarf der schriftlichen Zustimmung.
 
