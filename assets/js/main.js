@@ -19,4 +19,21 @@ $(document).ready(function(){
 
   $('.home__slider').flickity(flickityOptions);
   $('.profil__slider').flickity(flickityOptions);
+
+  var menuToggled = false;
+
+  var toggleMenu = function() {
+    if (menuToggled === true) {
+      $('.menu__toggle i').removeClass('fa-bars').addClass('fa-close');
+      $('nav.menu').addClass('expanded');
+    } else {
+      $('.menu__toggle i').removeClass('fa-close').addClass('fa-bars');
+      $('nav.menu').removeClass('expanded');
+    }
+  };
+
+  $('body').on('click', '.menu__toggle', function() {
+    menuToggled = !menuToggled;
+    toggleMenu();
+  });
 });
