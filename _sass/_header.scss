@@ -32,8 +32,12 @@
   margin-right: 2rem;
 }
 
+.menu__social a {
+  font-size: 1.2rem;
+}
+
 .menu__social a:not(:first-child) {
-  margin-left: 0.2rem;
+  margin-left: 0.3rem;
 }
 
 .menu .twitter:hover {
