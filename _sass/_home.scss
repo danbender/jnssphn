@@ -82,6 +82,20 @@
   }
 }
 
+.home .juicer-feed {
+  margin: 4rem auto !important;
+
+  h1.referral {
+    font-size: 1.5rem;
+    text-align: center;
+
+    a {
+      display: block;
+      font-size: 1rem;
+    }
+  }
+}
+
 @media screen and (min-width: 400px) {
   .home__form {
     input,
@@ -130,6 +144,7 @@
     right: 30vw;
     transform: translateX(50%);
     transition: all 0.5s linear;
+    z-index: 9999;
   }
 
   .home__subscribe.visible {
