@@ -167,13 +167,14 @@
     opacity: 0;
     position: fixed;
     right: 30vw;
-    transform: translateX(50%);
+    transform: translate(50%, 100%);
     transition: all 0.5s linear;
     z-index: 9999;
   }
 
   .home__subscribe.visible {
     opacity: 1;
+    transform: translate(50%, 0);
   }
 
   .subscribe__header {
