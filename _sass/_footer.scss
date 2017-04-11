@@ -17,7 +17,7 @@
   margin-right: 0.5rem;
 }
 
-.footer img {
+.cdu-logo {
   display: block;
   box-shadow: 0 0 5px $light-grey;
   max-height: 2rem;
@@ -33,7 +33,10 @@
     margin-right: 1rem;
   }
 
-  .footer img {
+  .cdu-logo {
     max-height: 4rem;
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
   }
 }
