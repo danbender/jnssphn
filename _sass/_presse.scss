@@ -111,6 +111,13 @@
   }
 }
 
+.press-link {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: $light;
+  margin-top: 1rem;
+}
+
 @media screen and (min-width: 1024px) {
   .presse__wrapper {
     display: flex;
