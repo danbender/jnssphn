@@ -14,11 +14,17 @@
   <nav class="menu">
     <div class="menu__links">
       {% assign sorted_pages = site.pages | sort: "order" %}
-      {% for page in sorted_pages %}
-        {% if page.title and page.categories == 'menu' %}
-          <a class="menu__link" href="{{ page.url | absolute_url }}">
-            {{ page.title | escape }}
-          </a>
+      {% for node in sorted_pages %}
+        {% if node.title and node.categories == 'menu' %}
+          {% if page.url == node.url %}
+            <a class="menu__link active" href="{{ node.url | absolute_url }}">
+              {{ node.title | escape }}
+            </a>
+          {% else %}
+            <a class="menu__link" href="{{ node.url | absolute_url }}">
+              {{ node.title | escape }}
+            </a>
+          {% endif %}
         {% endif %}
       {% endfor %}
     </div>
