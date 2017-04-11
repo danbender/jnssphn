@@ -12,7 +12,27 @@
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-    <link rel="icon" href="{{ '/favicon.ico' | absolute_url }}" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ '/assets/images/favicon/apple-touch-icon-57x57.png' | absolute_url }}" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ '/assets/images/favicon/apple-touch-icon-114x114.png' | absolute_url }}" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ '/assets/images/favicon/apple-touch-icon-72x72.png' | absolute_url }}" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/assets/images/favicon/apple-touch-icon-144x144.png' | absolute_url }}" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ '/assets/images/favicon/apple-touch-icon-60x60.png' | absolute_url }}" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ '/assets/images/favicon/apple-touch-icon-120x120.png' | absolute_url }}" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ '/assets/images/favicon/apple-touch-icon-76x76.png' | absolute_url }}" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ '/assets/images/favicon/apple-touch-icon-152x152.png' | absolute_url }}" />
+    <link rel="icon" type="image/png" href="{{ '/assets/images/favicon/favicon-196x196.png' | absolute_url }}" sizes="196x196" />
+    <link rel="icon" type="image/png" href="{{ '/assets/images/favicon/favicon-96x96.png' | absolute_url }}" sizes="96x96" />
+    <link rel="icon" type="image/png" href="{{ '/assets/images/favicon/favicon-32x32.png' | absolute_url }}" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ '/assets/images/favicon/favicon-16x16.png' | absolute_url }}" sizes="16x16" />
+    <link rel="icon" type="image/png" href="{{ '/assets/images/favicon/favicon-128.png' | absolute_url }}" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="{{ 'mstile-144x144.png' | absolute_url }}" />
+    <meta name="msapplication-square70x70logo" content="{{ 'mstile-70x70.png' | absolute_url }}" />
+    <meta name="msapplication-square150x150logo" content="{{ 'mstile-150x150.png' | absolute_url }}" />
+    <meta name="msapplication-wide310x150logo" content="{{ 'mstile-310x150.png' | absolute_url }}" />
+    <meta name="msapplication-square310x310logo" content="{{ 'mstile-310x310.png' | absolute_url }}" />
+
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
