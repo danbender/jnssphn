@@ -3,8 +3,8 @@
 }
 
 .flickity-prev-next-button {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   background: transparent;
 }
 
@@ -25,11 +25,25 @@
 }
 
 .flickity-prev-next-button.previous {
-  left: -3.5rem;
+  left: -3rem;
 }
 
 .flickity-prev-next-button.next {
-  right: -3.5rem;
+  right: -3rem;
+}
+
+.home .carousel {
+  height: 100%;
+}
+
+.home .carousel-cell {
+  height: 100%;
+}
+
+.home .flickity-slider img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {

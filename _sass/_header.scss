@@ -3,6 +3,10 @@
   margin: 1rem 0 2rem;
 }
 
+.home .header {
+  margin-top: 0;
+}
+
 .header__title {
   align-items: center;
   display: flex;
@@ -73,7 +77,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: 2rem 0 4rem;
+    margin: 3rem 0 4rem;
   }
 
   .header__title {

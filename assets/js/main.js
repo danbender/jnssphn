@@ -15,8 +15,8 @@ $(document).ready(function(){
     wrapAround: true
   };
 
-  $('.home__slider').flickity(flickityOptions);
-  $('.profil__slider').flickity(flickityOptions);
+  $('.home__slider').flickity(Object.assign(flickityOptions, {setGallerySize: false}));
+  $('.profil__slider').flickity(Object.assign(flickityOptions, {setGallerySize: true}));
 
   var menuToggled = false;
 
@@ -55,6 +55,25 @@ $(document).ready(function(){
   setTimeout(function() {
     $('.home__subscribe').addClass('visible');
   }, 3000);
+
+  // Smooth scrolling
+  var smoothScroll = function(target) {
+    $('body, html').animate({
+      scrollTop: target.offset().top
+    }, 750);
+  };
+
+  // Clean URL from anchor names and smooth scroll
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        smoothScroll(target);
+        return false;
+      }
+    }
+  });
 });
 
 var translateJuicer = function() {
