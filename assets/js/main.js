@@ -24,7 +24,9 @@ $(document).ready(function(){
   $('.home__slider').flickity(flickityOptions);
   $('.profil__slider').flickity(flickityOptions);
 
-  $('.home .flickity-viewport').height($('.home__slider').height());
+  setTimeout(function() {
+    $('.home .flickity-viewport').height($('.home__slider').height());
+  }, 100);
 
   var menuToggled = false;
 
