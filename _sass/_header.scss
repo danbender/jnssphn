@@ -55,12 +55,8 @@
   }
 }
 
-.menu__link {
-  font-family: 'CeraPRO', 'Roboto', sans-serif;
-
-  &.active {
-    color: $orange;
-  }
+.menu__link.active {
+  color: $orange;
 }
 
 .menu__social a {

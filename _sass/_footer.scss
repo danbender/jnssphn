@@ -8,7 +8,7 @@
 .footer__title,
 .footer__link {
   display: inline-block;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 
 .footer__title {
@@ -21,6 +21,9 @@
   display: block;
   box-shadow: 0 0 5px $light-grey;
   max-height: 2rem;
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%);
 }
 
 @media screen and (min-width: 768px) {
@@ -35,8 +38,5 @@
 
   .cdu-logo {
     max-height: 4rem;
-    position: absolute;
-    right: 0;
-    transform: translateY(-50%);
   }
 }

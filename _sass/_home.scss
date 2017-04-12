@@ -124,8 +124,8 @@
     }
 
     button[type=submit] {
-      padding-left: 0.8rem;
-      padding-right: 0.8rem;
+      padding-left: 0.7rem;
+      padding-right: 0.7rem;
     }
 
     input.zip {
@@ -178,6 +178,7 @@
   }
 
   .subscribe__header {
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -207,12 +208,18 @@
   }
 
   .home__form {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
     input,
     button[type=submit] {
       font-size: 0.6rem;
     }
 
     input.zip {
+      margin: 0 0.2rem;
       width: 4rem;
     }
 
