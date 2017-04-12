@@ -32,18 +32,10 @@
   right: -3rem;
 }
 
-.home .carousel {
+.slider__img {
   height: 100%;
-}
-
-.home .carousel-cell {
-  height: 100%;
-}
-
-.home .flickity-slider img {
-  height: 100%;
-  width: 100%;
   object-fit: cover;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
