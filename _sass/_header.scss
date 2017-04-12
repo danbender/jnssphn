@@ -10,16 +10,9 @@
   margin-bottom: 1rem;
 }
 
-.title {
-  font-weight: $bold;
-}
-
-.title span {
-  font-weight: $light;
-}
-
-.title a:hover {
-  color: $grey;
+.header__logo {
+  max-width: 12rem;
+  vertical-align: middle;
 }
 
 .menu__toggle {
@@ -87,6 +80,11 @@
     margin: 0;
   }
 
+  .header__logo {
+    max-width: 15rem;
+  }
+
+
   .menu__toggle {
     display: none;
   }
@@ -94,10 +92,6 @@
   .menu {
     display: block;
     max-height: 100%;
-  }
-
-  .title {
-    margin: 0;
   }
 
   .menu__links,
