@@ -39,11 +39,11 @@
 }
 
 .resume__headline {
-  font-weight: $bold;
+  font-weight: bold;
   margin-bottom: 3rem;
 
   span {
-    font-weight: $light;
+    font-weight: 300;
   }
 }
 
@@ -83,7 +83,7 @@
 .contact__subline,
 .contact__phone,
 .contact__email {
-  font-weight: $bold;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -114,7 +114,7 @@
 .press-link {
   display: block;
   font-size: 0.8rem;
-  font-weight: $light;
+  font-weight: 300;
   margin-top: 1rem;
 }
 

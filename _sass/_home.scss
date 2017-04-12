@@ -14,12 +14,12 @@
 }
 
 .subscribe__headline {
-  font-weight: $bold;
+  font-weight: bold;
 }
 
 .subscribe__subline {
   color: $light-orange;
-  font-weight: $light;
+  font-weight: 300;
 }
 
 .home__form {
@@ -94,7 +94,7 @@
 .home__contact-link {
   color: $light-orange;
   font-size: 0.8rem;
-  font-weight: $light;
+  font-weight: 300;
 
   &:hover {
     color: #fff;
@@ -189,7 +189,7 @@
     cursor: pointer;
     display: block;
     padding: 0 0 0 0.5rem;
-    font-weight: $bold;
+    font-weight: bold;
     font-size: 1rem;
   }
 

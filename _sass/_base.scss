@@ -1,7 +1,34 @@
 @font-face {
   font-family: 'CeraPRO';
-  src: url('../fonts/CeraPRO-Regular.otf') format('opentype'),
-  url('../fonts/CeraPRO-Regular.ttf') format('truetype');
+  src: url('subset-CeraPRO-Light.eot');
+  src: url('subset-CeraPRO-Light.eot?#iefix') format('embedded-opentype'),
+  url('subset-CeraPRO-Light.woff2') format('woff2'),
+  url('subset-CeraPRO-Light.woff') format('woff'),
+  url('subset-CeraPRO-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CeraPRO';
+  src: url('subset-CeraPRO-Bold.eot');
+  src: url('subset-CeraPRO-Bold.eot?#iefix') format('embedded-opentype'),
+  url('subset-CeraPRO-Bold.woff2') format('woff2'),
+  url('subset-CeraPRO-Bold.woff') format('woff'),
+  url('subset-CeraPRO-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CeraPRO';
+  src: url('subset-CeraPRO-Regular.eot');
+  src: url('subset-CeraPRO-Regular.eot?#iefix') format('embedded-opentype'),
+  url('subset-CeraPRO-Regular.woff2') format('woff2'),
+  url('subset-CeraPRO-Regular.woff') format('woff'),
+  url('subset-CeraPRO-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
@@ -22,7 +49,7 @@ p + p {
 
 h1,
 h2 {
-  font-weight: $bold;
+  font-weight: bold;
 }
 
 h1 {

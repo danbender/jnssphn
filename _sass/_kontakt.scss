@@ -7,7 +7,7 @@
   h3 {
     color: $orange;
     font-size: 1.2rem;
-    font-weight: $bold;
+    font-weight: bold;
   }
 }
 
@@ -73,7 +73,7 @@
 
 .whatsapp-number {
   font-size: 1.2rem;
-  font-weight: $bold;
+  font-weight: bold;
   margin: 1rem 0 0;
   text-align: center;
 
@@ -123,11 +123,11 @@
 .info__headline,
 .info__phone,
 .info__email {
-  font-weight: $bold;
+  font-weight: bold;
 }
 
 .info__address {
-  font-weight: $light;
+  font-weight: 300;
 }
 
 .info__social {
