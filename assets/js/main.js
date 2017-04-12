@@ -1,6 +1,4 @@
 $(document).ready(function(){
-  console.log('hi');
-
   var flickityOptions = {
     autoPlay: true,
     arrowShape: {
@@ -49,7 +47,7 @@ $(document).ready(function(){
     }
   };
 
-  $('body').on('click', '.subscribe__toggle', function() {
+  $('body').on('click', '.subscribe__header', function() {
     subscribeToggled = !subscribeToggled;
     toggleSubscribe();
   });
@@ -58,3 +56,7 @@ $(document).ready(function(){
     $('.home__subscribe').addClass('visible');
   }, 3000);
 });
+
+var translateJuicer = function() {
+  $('.j-paginate').text('Mehr laden');
+};
