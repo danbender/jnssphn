@@ -26,7 +26,7 @@ $(document).ready(function(){
 
   setTimeout(function() {
     $('.home .flickity-viewport').height($('.home__slider').height());
-  }, 100);
+  }, 300);
 
   var menuToggled = false;
 
