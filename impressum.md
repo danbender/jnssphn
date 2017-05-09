@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jens Spahn MdB - Impressum
+title: Impressum
 permalink: "/impressum/"
 ---
 

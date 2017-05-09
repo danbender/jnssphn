@@ -6,6 +6,9 @@
 .image__wrapper--1,
 .image__wrapper--2,
 .image__wrapper--3,
+.image__wrapper--4,
+.image__wrapper--5,
+.image__wrapper--6,
 .presse__resume {
   margin-bottom: 2rem;
 }
@@ -127,6 +130,9 @@
   .image__wrapper--1,
   .image__wrapper--2,
   .image__wrapper--3,
+  .image__wrapper--4,
+  .image__wrapper--5,
+  .image__wrapper--6,
   .presse__resume {
     display: flex;
     flex-direction: column;
@@ -139,7 +145,10 @@
   }
 
   .image__wrapper--2,
-  .image__wrapper--3  {
+  .image__wrapper--3,
+  .image__wrapper--4,
+  .image__wrapper--5,
+  .image__wrapper--6 {
     flex: 1.5;
   }
 
