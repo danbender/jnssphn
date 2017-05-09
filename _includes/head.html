@@ -2,6 +2,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="format-detection" content="telephone=no">
+<!-- <meta name="robots" content="index, follow"> -->
 
 <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
@@ -26,6 +27,27 @@
 <meta name="msapplication-square150x150logo" content="{{ 'mstile-150x150.png' | absolute_url }}" />
 <meta name="msapplication-wide310x150logo" content="{{ 'mstile-310x150.png' | absolute_url }}" />
 <meta name="msapplication-square310x310logo" content="{{ 'mstile-310x310.png' | absolute_url }}" />
+
+<link href="http://www.jens-spahn.de/" rel="canonical">
+<meta name="description" lang="en" content="Homepage von Jens Spahn, MdB">
+<meta name="author" content="Dan Bender, Lukas Ingelheim, code & co., c&., codeeandco, https://www.codeandco.com" />
+
+
+<meta property="og:site_name" content="Jens Spahn, MdB"/>
+<meta property="og:title" content="Jens Spahn, MdB">
+<meta property="og:description" content="Homepage von Jens Spahn, MdB">
+<meta property="og:image" content="">
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.jens-spahn.de/" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="http://www.jens-spahn.de/">
+<meta name="twitter:creator" content="Jens Spahn, MdB">
+<meta name="twitter:title" content="Jens Spahn, MdB">
+<meta name="twitter:description" content="Homepage von Jens Spahn, MdB">
+<meta name="twitter:image" content="">
+<meta name="twitter:image:alt" content="Jens Spahn, MdB">
+
 
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
